@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    text-align: center;
+    
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    padding: 5px;
+}
+header, #pages, #table, form {
+	margin: 15px 0;  
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#form {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+img {
+    max-height: 25px;
+	transition: all .2s ease-in-out;
+}
+
+img:hover {
+	transform: scale(10.10); 
+}
+
+/*** add.php styles ***/
+
+#create-title {
+    text-align: center;
+    width: 100%;
+}
+
+.alert {
+    color: red;
+    display: none;
+}
+
+
+/****************************/
+
