@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 500px;
+	margin: 0 auto;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+#create-form>.row{
+	justify-content: flex-start;
+	text-align: right;
+}
+
+#create-form>.row>label{
+	width: 25%;
+	align-self: flex-start;
+	padding-right: 15px;
+}
+
+#create-form>.row>input{
+	width: 50%;
+	align-self: flex-start;
+}
+
+div {
+	margin: 15px 0;
+}
+
+#search-box {
+		border: 1px solid black;
+		margin-bottom: 10px;
+	padding: 15px;
+}
+
+
+table {
+	width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+#btn {
+	text-align: center;
+}
+
+p {
+    color: red;
+}
+
+.req {
+    display: none;
+}
+
+.img {
+    display: none;
+}
+
+td {
+    padding-left: 3px;
+    height: 20px;
+    text-align: center;
+}
+
+img {
+    height: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-height: 25px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+img:hover {
+        transform: scale(10.10); 
+        -webkit-transform: scale(10.10); 
+}
+
+#search-form {
+    width: 60%;
+}
+
+#search-form>button {
+    align-self: center;;
+}

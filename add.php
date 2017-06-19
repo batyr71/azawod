@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8">
-        <title>Создание сотрудника</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1 id="create-title">Создание сотрудника</h1>
-        </header>
-        <form id="add-form" method="post">	
-            <div><label>Фамилия:</label><input type="text" id="lastname" name="lastname"> <span class="alert">*</span> </div><br>
-            <div><label>Имя:</label><input type="text" id="firstname" name="firstname"> <span class="alert">*</span></div><br>
-            <div><label>Отчество:</label><input type="text" id="middlename" name="middlename"></div><br>
-            <div><label>Дата рождения:</label><input type="date" id="birthdate" name="birthdate"><span class="alert">*</span></div><br>
-            <div><label>Пол:</label><select id="sex" name="sex">
+        <title>Реестр сотрудников</title>
+        <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <h1>Создание сотрудника</h1>
+    <form id="create-form" action="/classes/add.php" method="post">
+        <div class="row"><label for="">Фамилия:</label><input id="firstname" type="text" name="lastname"><p class="req">*</p></div>
+        <div class="row"><label for="">Имя:</label><input id="lastname" type="text" name="firstname"><p class="req">*</p></div>
+        <div class="row"><label for="">Отчество:</label><input type="text" name="middlename"></div>
+        <div class="row"><label for="">Дата рождения:</label><input id="birthdate" type="date" name="birthday"><p class="req">*</p></div>
+        <div class="row"><label for="">Пол:</label>
+            <select name="sex" id="sex">
                 <option value="">Выберите пол</option>
-                <option value="Муж." >Муж.</option>
-                <option value="Жен.">Жен.</option>
-                </select><span class="alert">*</span></div><br>
-                <label>Фото:</label><input  type="file" id="photo" name="image" ></input><br>
-            <input type="hidden" name="action" id="action"/>
-            <input type="submit" name="save" value="Сохранить"></input>
-            <input type="reset" value="Отменить" id="reset"></input><br>
-        </form>
-        <h2 class="alert">* обязательное поле или Макс размер фото 200 кБ</h2>
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/js.js"></script>
-    </body>
+                <option value="Муж">Муж</option>
+                <option value="Жен">Жен</option>
+            </select><p class="req">*</p></div>
+        <div class="row"><label for="">Фото:</label><input id="image" type="file" name="image"></div>
+        <div id="btn"><button type="submit">Сохранить</button>
+            <button id="reset"type="reset">Отменить</button></div>
+    </form>
+    <p class="req">* обязательные поля</p>
+    <p class="img">файл не должен превышать 200кб</p>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/js.js"></script>
+</body>
 </html>
